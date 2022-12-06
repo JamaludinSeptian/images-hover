@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="judul" id="judul">
+    <h1>EVERYTHING ABOUT YOU<br> RENANDA TRISEPTIA RUSLI</h1>
+    <button onclick="myFunction()" class="button-primary">KEJUTAN UNTUK KAMU</button>
+  </div>
+  
+  <div id="myDIV" >
+    <div class="container">
+      <img src="images/1 (1).jpeg" alt="">
+      <img src="images/2.jpeg" alt="">
+      <img src="images/4.jpeg" alt="">
+      <img src="images/5.jpeg" alt="">
+      <img src="images/6.jpeg" alt="">
+      <img src="images/7.jpeg" alt="">
+    </div>
+    <div class="container">
+      <img src="images/WhatsApp Image 2022-12-02 at 19.13.13.jpeg" id="myFoto">
+    </div>
+  </div>
+  <button onclick="myShow()" class="button-secondary" id="btn">KEMBALI</button>
+  
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDIV").style.display = "block";
+      document.getElementById("judul").style.display = "none";
+      document.getElementById("btn").style.display = "block";
+    
+    }
+    function myShow(){
+      alert("MAAF YA GK BISA KEMBALI, UDAH DI SINI AJA, AKU KASIH FOTO AKU AJA HEHEHE")
+      document.getElementById("myFoto").style.display = "block";
+    }
+
+  </script>
+</body>
+</html>
